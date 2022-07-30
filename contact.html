@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <nav>
+      <h1><a class="logo" href="./index.html">oti contacts</a></h1>
+
+      <h1 class="text-center">contact details</h1>
+
+      <form action="">
+        <div class="nameAddress">
+          <label for="address">Address</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            class="form-control"
+            required
+          />
+
+          <label for="name" id="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your Name"
+            required
+          />
+        </div>
+
+        <div class="phoneDate">
+          <label for="tel">Phone</label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            class="form-control"
+            placeholder="Enter your phone (eg +2347083083692)"
+            required
+          />
+
+          <label for="date" id="date">Date</label>
+          <input
+            type="date"
+            id="date"
+            class="form-control"
+            name="date"
+            placeholder="mm/dd/yyyy"
+          />
+        </div>
+
+        <div id="dropdown">
+          <p>Select message priority:</p>
+          <select class="form-control" name="priority" id="messages">
+            <option value="urgent">Urgent</option>
+            <option value="important">Important</option>
+            <option value="less-urgent">Less Urgent</option>
+            <option value="unimportant">Unimportant</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <label for="message" id="message">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Enter your message..."
+        ></textarea>
+
+        <div class="form-contact">
+          <button type="submit" id="submit" class="submit-btn" value="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

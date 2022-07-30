@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #f3f3f3;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: #f3f3f3;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      115deg,
+      rgba(148, 172, 145, 0.541),
+      rgba(22, 85, 41, 0.7)
+    ),
+    url(./logo.png);
+}
+
+/* navigation */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px 0;
+  /* color: red; */
+}
+
+nav .logo {
+  text-transform: capitalize;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin: 0 25px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* utilities */
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  /* text-transform: capitalize; */
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+span {
+  color: rgba(83, 85, 82, 0.541);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/* container */
+
+.container {
+  max-width: 100%;
+  margin: 5.125rem auto 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* form */
+
+form {
+  background: var(--modal-white);
+  padding: 2.5rem 7.625rem;
+  border-radius: 0.25rem;
+}
+
+button {
+  border: none;
+}
+
+.form-login {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.logo-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #495057;
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1rem;
+}
